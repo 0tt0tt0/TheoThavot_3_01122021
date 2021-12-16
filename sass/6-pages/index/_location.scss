@@ -1,0 +1,14 @@
+.location{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: $color-background-dark;
+    box-shadow: inset 0px 2px 2px -1px darken($color-background-dark, 5%);
+    .location__input{
+        font-weight: bold;
+        border: none;
+        width: 120px;
+        margin-left: 10px;
+        background-color: $color-background-dark;
+    }
+}

@@ -1,0 +1,9 @@
+.menu-group{
+    display: flex;
+    flex-direction: column;
+    &__heading{
+        padding-bottom: 3px;
+        border-bottom: 3px solid $color-tertiary;
+        width: 40px;
+    }
+}

@@ -1,0 +1,25 @@
+.heart{
+    &:hover > .btn-heart-full{
+        transform: scale(1);
+    }
+}
+
+.btn-heart{
+    font-size: x-large;
+}
+
+.btn-heart-empty{
+    background-color: transparent;
+}
+
+.btn-heart-full{
+    z-index:-1;
+    transform: scale(0);
+    transition: transform 500ms ease-in;
+    @include gradient;
+    background-clip: text;  
+    -webkit-background-clip: text;  
+    -moz-background-clip: text;  
+    -moz-text-fill-color: transparent;  
+    -webkit-text-fill-color: transparent;
+}

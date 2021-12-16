@@ -1,0 +1,75 @@
+.meal-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include card-radius;
+    @include box-shadow;
+    background-color: white;
+    overflow: hidden;
+    p{
+        margin: 0px;
+    }
+    &__body{
+        width: 100%;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        align-items: flex-end;
+    
+    }
+    &__checked-flag{
+        margin-left: 10px;
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        width: 0px;
+        transition: width 400ms;
+        align-self: stretch;
+        overflow: hidden;
+        background-color: $color-tertiary;
+        border-top-right-radius: $card-radius;
+        border-bottom-right-radius: $card-radius;
+        i{
+            color: white;
+            background-color: $color-tertiary;
+            transition: transform 0s linear 0s;
+        }
+    }
+    &:hover > &__checked-flag{
+        width: 50px;
+        i{
+            transform: rotate(360deg);
+            transition-duration: 400ms;
+            transition-delay: 0s; 
+        }
+    }
+}
+.meal-details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-content: flex-end;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px;
+    p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__name{
+        @include font-card-bold;
+    }
+    &__description{
+        @include font-card-light;
+    }
+    
+}
+
+.meal-price{
+    display: flex;
+    @include font-card-bold-small;
+    margin: 10px 5px;
+}

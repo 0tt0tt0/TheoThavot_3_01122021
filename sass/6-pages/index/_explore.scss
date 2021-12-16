@@ -1,0 +1,17 @@
+.explore{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__heading{
+        text-align: center;
+        padding: 0px 50px;
+        margin: 0px;
+    }
+    &__description{
+        text-align: center;
+        padding: 0px 20px;
+        font-family: "Roboto-Light";
+        font-size: smaller;
+    }
+}

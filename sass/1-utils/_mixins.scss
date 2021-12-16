@@ -1,0 +1,27 @@
+@mixin box-shadow{
+    box-shadow: 0px 5px 5px darken($color-background-light, 10%);
+}
+@mixin box-shadow-big{
+    box-shadow: 0px 10px 10px darken($color-background-light, 20%);
+}
+@mixin card-radius{
+    border-radius: $card-radius;
+}
+@mixin card-padding{
+    padding:10px;
+}
+@mixin gradient{
+    background-image: linear-gradient(to bottom right, $color-secondary, $color-primary);
+}
+@mixin gradient-light{
+    background-image: linear-gradient(to bottom right, lighten($color-secondary, 5%), lighten($color-primary,5%));
+}
+@mixin restaurant-image-radius{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+@mixin btn-no-border{
+    border:none;
+    background: transparent;
+    font-size: large;
+}

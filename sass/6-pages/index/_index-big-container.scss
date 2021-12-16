@@ -1,0 +1,7 @@
+.index-big-container{
+    display: flex;
+    flex-direction: column;
+    section:nth-of-type(even){
+        background-color: white;
+    }
+}

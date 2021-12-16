@@ -1,0 +1,26 @@
+.footer{
+    background-color: $color-background-black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    color: white;
+    padding: 20px;
+    &__heading{
+        font-family: "Shrikhand";
+        font-size: medium;
+    }
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        a{
+            display:flex;
+            flex-direction: row;
+            column-gap: 10px;
+            font-family: "Roboto-Regular";
+            font-size: small;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.menu-title{
+    transform: rotate(0deg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &:nth-child(1){
+        flex:1
+    }
+    .btn-heart{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }  
+}

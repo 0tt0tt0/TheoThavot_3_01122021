@@ -1,0 +1,41 @@
+.steps-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__bullet{
+        z-index: 1;
+        padding:5px 10px;
+        border-radius: 100%;
+        background-color: $color-primary;
+        color:white;
+        @include font-card-bold;
+    }
+    &__body{
+        position: relative;
+        right:15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 20px;
+        width: 100%;
+        padding: 0px 30px;
+        background-color: $color-background-light;
+        @include box-shadow;
+        @include card-radius;
+        i{
+            color: darken($color-background-light, 80%);
+        }
+        p{
+            @include font-card-bold-small;
+        }
+    }
+}
+
+.steps-card--modified{
+    &__body{
+        background-color: lighten($color-primary, 30%);
+        i{
+            color: $color-primary;
+        }
+    }
+}

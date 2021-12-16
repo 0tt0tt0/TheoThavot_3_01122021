@@ -1,0 +1,15 @@
+.btn{
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border:none;
+    color: white;
+    width: fit-content;
+    justify-self: center;
+    @include gradient;
+    @include box-shadow;
+    &:hover{
+        @include gradient-light;
+        @include box-shadow-big;
+    }
+}
