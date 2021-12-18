@@ -21,7 +21,6 @@
     &__checked-flag{
         margin-left: 10px;
         display: flex;
-        flex-shrink: 0;
         align-items: center;
         justify-content: center;
         width: 0px;
@@ -51,9 +50,8 @@
     flex-direction: column;
     row-gap: 5px;
     align-content: flex-end;
-    overflow: hidden;
-    text-overflow: ellipsis;
     margin: 10px;
+    overflow: hidden;
     p{
         white-space: nowrap;
         overflow: hidden;

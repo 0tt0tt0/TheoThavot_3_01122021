@@ -1,9 +1,34 @@
 .menu-group{
     display: flex;
     flex-direction: column;
+    margin: 20px 0px;
+    
     &__heading{
         padding-bottom: 3px;
         border-bottom: 3px solid $color-tertiary;
         width: 40px;
     }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+@keyframes fadein{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.menu-group_1{
+    animation: 2s fadein;
+}
+.menu-group_2{
+    animation: 2s 2s fadein;
+}
+.menu-group_3{
+    animation: 2s 4s fadein;
 }

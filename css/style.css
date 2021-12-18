@@ -1,0 +1,472 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("fonts/Shrikhand-Regular.otf");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("fonts/Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("fonts/Roboto/Roboto-Light.ttf");
+}
+.menu-title__heading {
+  font-family: "Shrikhand";
+}
+
+.menu-group__heading {
+  font-family: "Roboto-Light";
+  font-size: medium;
+  text-transform: uppercase;
+}
+
+.flag-new {
+  font-family: "Roboto-Regular";
+  font-size: small;
+}
+
+.footer__header {
+  font-family: "Shrikhand";
+  font-size: medium;
+}
+
+h1 {
+  font-family: "Roboto-Bold";
+  font-size: 20px;
+}
+
+/*p{
+  font-family: "Roboto-Regular";
+  font-size: small; 
+}*/
+body {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  width: fit-content;
+  justify-self: center;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 0px 5px 5px #dddddd;
+}
+.btn:hover {
+  background-image: linear-gradient(to bottom right, #ff93e1, #a16be0);
+  box-shadow: 0px 10px 10px #c3c3c3;
+}
+
+.heart {
+  width: 50px;
+}
+
+.heart:hover .btn-heart-full {
+  transform: scale(1);
+  transition-duration: 400ms;
+  transition-delay: 0s;
+}
+
+.heart:hover .btn-heart-empty {
+  display: none;
+}
+
+.btn-heart {
+  font-size: x-large;
+}
+
+.btn-heart-empty {
+  background-color: transparent;
+}
+
+.btn-heart-full {
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 0s ease-in 0s;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-back {
+  border: none;
+  background: transparent;
+  font-size: large;
+}
+
+.flag-new {
+  background-color: #99E2D0;
+  color: #278870;
+  padding: 5px;
+  border-radius: 10%;
+  width: fit-content;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 15px;
+  font-family: "Roboto-Regular";
+  font-size: 11px;
+}
+
+.flag-new--unactive {
+  display: none;
+}
+
+.steps-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.steps-card__bullet {
+  z-index: 1;
+  padding: 5px 10px;
+  border-radius: 100%;
+  background-color: #9356DC;
+  color: white;
+  font-family: "Roboto-Bold";
+  font-size: medium;
+}
+.steps-card__body {
+  position: relative;
+  right: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+  width: 100%;
+  padding: 0px 30px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 5px 5px #dddddd;
+  border-radius: 15px;
+}
+.steps-card__body i {
+  color: #2a2a2a;
+}
+.steps-card__body p {
+  font-family: "Roboto-Bold";
+  font-size: small;
+}
+
+.steps-card--modified__body {
+  background-color: #e4d5f6;
+}
+.steps-card--modified__body i {
+  color: #9356DC;
+}
+
+.restaurant-card {
+  transform: rotate(0deg);
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px #dddddd;
+}
+.restaurant-card__image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant-card__body {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.restaurant-card:hover {
+  box-shadow: 0px 10px 10px #c3c3c3;
+}
+.restaurant-card .btn-heart {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.restaurant-details {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant-details__name {
+  font-family: "Roboto-Bold";
+  font-size: medium;
+}
+.restaurant-details__location {
+  font-family: "Roboto-Light";
+  font-size: small;
+}
+
+.meal-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px #dddddd;
+  background-color: white;
+  overflow: hidden;
+}
+.meal-card p {
+  margin: 0px;
+}
+.meal-card__body {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.meal-card__checked-flag {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0px;
+  transition: width 400ms;
+  align-self: stretch;
+  overflow: hidden;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.meal-card__checked-flag i {
+  color: white;
+  background-color: #99E2D0;
+  transition: transform 0s linear 0s;
+}
+.meal-card:hover > .meal-card__checked-flag {
+  width: 50px;
+}
+.meal-card:hover > .meal-card__checked-flag i {
+  transform: rotate(360deg);
+  transition-duration: 400ms;
+  transition-delay: 0s;
+}
+
+.meal-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-content: flex-end;
+  margin: 10px;
+  overflow: hidden;
+}
+.meal-details p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.meal-details__name {
+  font-family: "Roboto-Bold";
+  font-size: medium;
+}
+.meal-details__description {
+  font-family: "Roboto-Light";
+  font-size: small;
+}
+
+.meal-price {
+  display: flex;
+  font-family: "Roboto-Bold";
+  font-size: small;
+  margin: 10px 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+}
+.header a {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.header__logo {
+  width: 50%;
+  object-fit: scale-down;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+.container {
+  display: flex;
+  padding: 30px 20px 50px 20px;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  color: white;
+  padding: 20px;
+}
+.footer__heading {
+  font-family: "Shrikhand";
+  font-size: medium;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.footer__nav a {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  font-family: "Roboto-Regular";
+  font-size: small;
+  text-decoration: none;
+  color: white;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 2px 2px -1px #dddddd;
+}
+.location .location__input {
+  font-weight: bold;
+  border: none;
+  width: 120px;
+  margin-left: 10px;
+  background-color: #eaeaea;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.explore__heading {
+  text-align: center;
+  padding: 0px 50px;
+  margin: 0px;
+}
+.explore__description {
+  text-align: center;
+  padding: 0px 20px;
+  font-family: "Roboto-Light";
+  font-size: smaller;
+}
+
+.steps-card-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.restaurant-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.index-big-container {
+  display: flex;
+  flex-direction: column;
+}
+.index-big-container section:nth-of-type(even) {
+  background-color: white;
+}
+
+.background-image {
+  width: 100%;
+}
+.background-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu-title {
+  transform: rotate(0deg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-title:nth-child(1) {
+  flex: 1;
+}
+.menu-title .btn-heart {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.menu-container {
+  padding: 20px;
+  position: relative;
+  bottom: 50px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.menu-group {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+.menu-group__heading {
+  padding-bottom: 3px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+}
+.menu-group__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-group_1 {
+  animation: 2s fadein;
+}
+
+.menu-group_2 {
+  animation: 2s 2s fadein;
+}
+
+.menu-group_3 {
+  animation: 2s 4s fadein;
+}
+
+.btn-order-container {
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

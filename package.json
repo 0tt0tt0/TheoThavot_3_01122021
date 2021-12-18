@@ -1,0 +1,19 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0tt0tt0/TheoThavot_3_01122021.git"
+  },
+  "author": "0tt0tt0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0tt0tt0/TheoThavot_3_01122021/issues"
+  },
+  "homepage": "https://github.com/0tt0tt0/TheoThavot_3_01122021#readme"
+}

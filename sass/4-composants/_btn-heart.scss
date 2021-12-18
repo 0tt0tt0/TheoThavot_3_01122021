@@ -1,8 +1,16 @@
 .heart{
-    &:hover > .btn-heart-full{
-        transform: scale(1);
-    }
+    width: 50px;
 }
+
+.heart:hover .btn-heart-full{
+    transform: scale(1);
+    transition-duration: 400ms;
+    transition-delay: 0s; 
+    }
+.heart:hover .btn-heart-empty{
+    display: none;
+
+    }
 
 .btn-heart{
     font-size: x-large;
@@ -15,7 +23,7 @@
 .btn-heart-full{
     z-index:-1;
     transform: scale(0);
-    transition: transform 500ms ease-in;
+    transition: transform 0s ease-in 0s;
     @include gradient;
     background-clip: text;  
     -webkit-background-clip: text;  

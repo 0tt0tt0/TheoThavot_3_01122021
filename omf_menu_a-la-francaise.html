@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="normalize_v8.0.1.css" />
-        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" media="(max-width: 768px)" href="style-mobile.css" />
         <link rel="stylesheet" media="(min-width:768px)" href="style-desktop.css" />
 
@@ -32,41 +32,133 @@
             </div>
 
             <div class="menu-body">
-                <div class="menu-group">
+                <div class="menu-group menu-group_1">
                     <h3 class="menu-group__heading">Entrées</h3>
-                   <div class="meal-card">
-                        <div class="meal-card__body">
-                            <div class="meal-details">
-                                <div class="meal-details__name"><p>Tartare de poulpe acidulé</p></div>
-                                <div class="meal-details__description"><p>Aux zestes d'orange</p></div>
+                    <div class="menu-group__container">
+                        <div class="meal-card">
+                            <div class="meal-card__body">
+                                <div class="meal-details">
+                                    <div class="meal-details__name"><p>Tartare de poulpe acidulé</p></div>
+                                    <div class="meal-details__description"><p>Aux zestes d'orange</p></div>
+                                </div>
+                                <div class="meal-price"><p>25€</p></div>
                             </div>
-                            <div class="meal-price"><p>25€</p></div>
+                            <div class="meal-card__checked-flag"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="meal-card__checked-flag"><i class="fas fa-check-circle"></i></div>
-                    </div>
 
-                    <div class="meal-card">
-                        <div class="meal-card__body">
-                            <div class="meal-details">
-                                <div class="meal-details__name"><p>Velouté de légumes d'antan</p></div>
-                                <div class="meal-details__description"><p>Carotte, panais, topinambour</p></div>
+                        <div class="meal-card">
+                            <div class="meal-card__body">
+                                <div class="meal-details">
+                                    <div class="meal-details__name"><p>Velouté de légumes d'antan</p></div>
+                                    <div class="meal-details__description"><p>Carotte, panais, topinambour</p></div>
+                                </div>
+                                <div class="meal-price"><p>35€</p></div>
                             </div>
-                            <div class="meal-price"><p>35€</p></div>
+                            <div class="meal-card__checked-flag"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        <div class="meal-card__checked-flag"><i class="fas fa-check-circle"></i></div>
+                        
+                        <div class="meal-card">
+                            <div class="meal-card__body">
+                                <div class="meal-details">
+                                    <div class="meal-details__name"><p>Soupe à l'oignon</p></div>
+                                    <div class="meal-details__description"><p>Revisitée</p></div>
+                                </div>
+                                <div class="meal-price"><p>20€</p></div>
+                            </div>
+                            <div class="meal-card__checked-flag"><i class="fas fa-check-circle"></i></div>
+                        </div>
                     </div>
                     
-                    <div class="meal-card">
-                        <div class="meal-card__body">
-                            <div class="meal-details">
-                                <div class="meal-details__name"><p>Soupe à l'oignon</p></div>
-                                <div class="meal-details__description"><p>Revisitée</p></div>
-                            </div>
-                            <div class="meal-price"><p>20€</p></div>
-                        </div>
-                        <div class="meal-card__checked-flag"><i class="fas fa-check-circle"></i></div>
-                    </div>
+                </div>
+                
 
+                <div class="menu-group menu-group_2">
+                    <h3 class="menu-group__heading">Plats</h3>
+                    <div class="menu-group__container">
+                        <div class="meal-card">
+                            <div class="meal-card__body">
+                                <div class="meal-details">
+                                    <div class="meal-details__name"><p>Coquilles Saint-Jacques</p></div>
+                                    <div class="meal-details__description"><p>Accompagnées d'une purée de panais</p></div>
+                                </div>
+                                <div class="meal-price"><p>40€</p></div>
+                            </div>
+                            <div class="meal-card__checked-flag"><i class="fas fa-check-circle"></i></div>
+                        </div>
+
+                        <div class="meal-card">
+                            <div class="meal-card__body">
+                                <div class="meal-details">
+                                    <div class="meal-details__name"><p>Magret de canard</p></div>
+                                    <div class="meal-details__description"><p>Et parmentier de pommes de terre</p></div>
+                                </div>
+                                <div class="meal-price"><p>35€</p></div>
+                            </div>
+                            <div class="meal-card__checked-flag"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <div class="meal-card__body">
+                                <div class="meal-details">
+                                    <div class="meal-details__name"><p>Pigeonneau d’Ille-et-Vilaine</p></div>
+                                    <div class="meal-details__description"><p>Sur son lit de gnocchis aux légumes</p></div>
+                                </div>
+                                <div class="meal-price"><p>44€</p></div>
+                            </div>
+                            <div class="meal-card__checked-flag"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="menu-group menu-group_3">
+                    <h3 class="menu-group__heading">Desserts</h3>
+                    <div class="menu-group__container">
+                        <div class="meal-card">
+                            <div class="meal-card__body">
+                                <div class="meal-details">
+                                    <div class="meal-details__name"><p>Pétales de violettes glacésPétales de violettes glacés</p></div>
+                                    <div class="meal-details__description"><p>Et purée de noisettes</p></div>
+                                </div>
+                                <div class="meal-price"><p>18€</p></div>
+                            </div>
+                            <div class="meal-card__checked-flag"><i class="fas fa-check-circle"></i></div>
+                        </div>
+
+                        <div class="meal-card">
+                            <div class="meal-card__body">
+                                <div class="meal-details">
+                                    <div class="meal-details__name"><p>Fondant au chocolat</p></div>
+                                    <div class="meal-details__description"><p>Revisité</p></div>
+                                </div>
+                                <div class="meal-price"><p>22€</p></div>
+                            </div>
+                            <div class="meal-card__checked-flag"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <div class="meal-card__body">
+                                <div class="meal-details">
+                                    <div class="meal-details__name"><p>Millefeuille croustillant</p></div>
+                                    <div class="meal-details__description"><p>Myrtilles et pâte d’amande</p></div>
+                                </div>
+                                <div class="meal-price"><p>23€</p></div>
+                            </div>
+                            <div class="meal-card__checked-flag"><i class="fas fa-check-circle"></i></div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -75,31 +167,8 @@
 
 
 
-Plats
-Coquilles Saint-Jacques
-Accompagnées d'une purée de panais
-40€
 
-Magret de canard
-Et parmentier de pommes de terre
-35€
 
-Pigeonneau d’Ille-et-Vilaine
-Sur son lit de gnocchis aux légumes
-44€
-
-Desserts
-Pétales de violettes glacés
-Et purée de noisettes
-18€
-
-Fondant au chocolat
-Revisité
-22€
-
-Millefeuille croustillant
-Myrtilles et pâte d’amande
-23€
 
             <div class ="btn-order-container"><input type="button" class="btn menu__btn" value="Commander"></button></div>
         </div>
