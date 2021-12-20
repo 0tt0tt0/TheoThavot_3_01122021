@@ -73,7 +73,7 @@ a {
 }
 
 .heart {
-  width: 50px;
+  width: 40px;
 }
 
 .heart:hover .btn-heart-full {
@@ -227,6 +227,7 @@ a {
 }
 .meal-card__body {
   width: 100%;
+  transition: width 400ms;
   display: flex;
   flex: 1;
   justify-content: space-between;
@@ -257,6 +258,9 @@ a {
   transform: rotate(360deg);
   transition-duration: 400ms;
   transition-delay: 0s;
+}
+.meal-card:hover > .meal-card__body {
+  width: 0%;
 }
 
 .meal-details {
@@ -445,21 +449,26 @@ body {
 @keyframes fadein {
   from {
     opacity: 0;
+    transform: translateY(100px);
   }
   to {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 .menu-group_1 {
-  animation: 2s fadein;
+  animation: 2s 500ms fadein;
+  animation-fill-mode: backwards;
 }
 
 .menu-group_2 {
-  animation: 2s 2s fadein;
+  animation: 2s 1s fadein;
+  animation-fill-mode: backwards;
 }
 
 .menu-group_3 {
-  animation: 2s 4s fadein;
+  animation: 2s 1500ms fadein;
+  animation-fill-mode: backwards;
 }
 
 .btn-order-container {

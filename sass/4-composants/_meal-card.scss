@@ -12,6 +12,7 @@
     }
     &__body{
         width: 100%;
+        transition: width 400ms;
         display: flex;
         flex: 1;
         justify-content: space-between;
@@ -43,6 +44,9 @@
             transition-duration: 400ms;
             transition-delay: 0s; 
         }
+    }  
+    &:hover > &__body{
+        width: 0%;
     }
 }
 .meal-details{
