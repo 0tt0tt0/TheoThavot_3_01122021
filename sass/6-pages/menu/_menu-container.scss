@@ -6,4 +6,32 @@
     background-color: $color-background-light;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    .btn-order-container{
+        animation: 2s 2s fadein;
+        animation-fill-mode: backwards;
+    }
+}
+
+@keyframes fadein{
+    from{
+        opacity:0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+.menu-group_1{
+    animation: 2s 500ms fadein;
+    animation-fill-mode: backwards
+}
+.menu-group_2{
+    animation: 2s 1s fadein;
+    animation-fill-mode: backwards;
+}
+.menu-group_3{
+    animation: 2s 1500ms fadein;
+    animation-fill-mode: backwards;
 }

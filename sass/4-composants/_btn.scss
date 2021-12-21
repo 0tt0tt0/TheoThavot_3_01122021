@@ -8,6 +8,7 @@
     justify-self: center;
     @include gradient;
     @include box-shadow;
+    @include font-card-bold-small;
     &:hover{
         @include gradient-light;
         @include box-shadow-big;
